@@ -65,7 +65,7 @@ const ProductListPage = () => {
               {product.Image && (
                 <Card.Img
                   variant="top"
-                  src={`http://localhost:3006${product.Image}`}
+                  src={`https://hamzaalsiyabi-app-33d30b4be32b.herokuapp.com/images/${product.Image}`}
                   alt="Product"
                   style={{ maxHeight: '300px', objectFit: 'cover' }}
                 />
