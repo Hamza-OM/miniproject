@@ -175,8 +175,8 @@
 }
 
    /* Custom styles for carousel images */
-   .custom-slider-image {
-    max-height: 400px; /* Adjust the max height to make the images smaller */
-    object-fit: cover; /* Ensure the image covers the container */
+   /* .custom-slider-image {
+    max-height: 400px; 
+    object-fit: cover; 
     padding: 7pt;
-  }
+  } */
