@@ -20,7 +20,7 @@ const LoginForm = () => {
     setLoading(true);
 
     try {
-      const response = await fetch('hhttps://hamzaalsiyabi-app-33d30b4be32b.herokuapp.com/api/UserLogin', {
+      const response = await fetch('https://hamzaalsiyabi-app-33d30b4be32b.herokuapp.com/api/UserLogin', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
