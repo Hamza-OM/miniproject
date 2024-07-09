@@ -44,7 +44,7 @@ const AdminProductForm = ({ product, onUpdate, onClose }) => {
           }
         });
       } else {
-        await axios.post('https://hamzaalsiyabi-app-33d30b4be32b.herokuapp.comhttp://localhost:3006/api/Product', formData, {
+        await axios.post('https://hamzaalsiyabi-app-33d30b4be32b.herokuapp.com/api/Product', formData, {
           headers: {
             'Content-Type': 'multipart/form-data'
           }
