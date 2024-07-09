@@ -5,7 +5,6 @@ import { Table, Button, Modal } from 'react-bootstrap';
 import Swal from 'sweetalert2';
 import 'animate.css/animate.min.css';
 
-
 const AdminPage = () => {
   const [products, setProducts] = useState([]);
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -51,34 +50,34 @@ const AdminPage = () => {
 
   return (
     <div className="admin-container animate__animated animate__fadeIn">
-      <h2>Admin Panel</h2>
+      <h2 className="text-center">Admin Panel</h2>
 
-      <div className="admin-button-container">
+      <div className="admin-button-container d-flex justify-content-center">
         <Button variant="secondary" onClick={handleShowAddModal}>Add Product</Button>
       </div>
 
       <div className="table-container">
-        <Table striped bordered hover>
+        <Table striped bordered hover responsive>
           <thead>
             <tr>
-              <th className="locked-column">ID</th>
-              <th className="locked-column">Name</th>
-              <th className="locked-column">Description</th>
-              <th className="locked-column">Image</th>
-              <th className="locked-column">Price</th>
-              <th className="locked-column">Category ID</th>
-              <th className="locked-column">Actions</th>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Image</th>
+              <th>Price</th>
+              <th>Category ID</th>
+              <th>Actions</th>
             </tr>
           </thead>
           <tbody>
             {products.map((product) => (
               <tr key={product.PId}>
-                <td className="locked-column">{product.PId}</td>
-                <td className="locked-column">{product.Name}</td>
-                <td className="locked-column">{product.Description.slice(0, 30) + "..."}</td> {/* Truncate description */}
-                <td className="locked-column">{product.Image}</td>
-                <td className="locked-column">{product.Price}</td>
-                <td className="locked-column">{product.CId}</td>
+                <td>{product.PId}</td>
+                <td>{product.Name}</td>
+                <td>{product.Description.slice(0, 30) + "..."}</td>
+                <td>{product.Image}</td>
+                <td>{product.Price}</td>
+                <td>{product.CId}</td>
                 <td>
                   <Button variant="warning" onClick={() => handleEdit(product)}>Edit</Button>
                   <Button variant="danger" onClick={() => handleDelete(product.PId)}>Delete</Button>
