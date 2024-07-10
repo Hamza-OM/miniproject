@@ -9,7 +9,7 @@ const LoginPage = () => {
     
     <Container fluid className="login-container animate__animated animate__fadeIn">
       <Row className="justify-content-center align-items-center vh-100">
-        <Col md={6} className="login-form-container glass-morphism" style={{ paddingTop: '2rem' }}>
+        <Col md={6} className="login-form-container glass-morphism" >
           <h2 className="login-title">Welcome Back!</h2>
           <p lassName="login-subtitle">Please sign in to your account.</p>
           <LoginForm />
