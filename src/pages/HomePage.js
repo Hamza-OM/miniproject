@@ -49,31 +49,41 @@ function HomePage() {
       </Row>
 
       {/* Improved Footer */}
-      <footer className="footer fixed-bottom bg-light py-2 border-top d-flex justify-content-between align-items-center">
-  <div className="col-md-4">
-    <h5>Hamza Alsiyabi</h5>
-    <p>About Us</p>
-    <p>Contact Us</p>
+      <footer class="footer fixed-bottom bg-dark text-white d-flex flex-wrap justify-content-between align-items-center py-3 px-5">
+  <div class="col">
+    <a href="#" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+      <h5 class="text-white fs-4">Hamza Alsiyabi</h5>
+    </a>
+    <p class="text-muted">&copy; 2024 Hamza Alsiyabi</p>
   </div>
-  <div className="col-md-4">
-    <h5>Quick Links</h5>
-    <p>Home</p>
-    <p>Register</p>
-    <p>Products</p>
-  </div>
-  <div className="col-md-4 text-end">
-    <h5>Follow Us</h5>
-    <p>
-      <i className="bi bi-twitter"></i> Twitter
-    </p>
-    <p>
-      <i className="bi bi-instagram"></i> Instagram
-    </p>
-    <p>
-      <i className="bi bi-facebook"></i> Facebook
-    </p>
-  </div>
+
+  <ul class="nav col-md-auto mb-md-0 justify-content-end list-unstyled">
+    <li class="nav-item"><a href="#" class="nav-link px-3 text-white">Home</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-3 text-white">About Us</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-3 text-white">Contact Us</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-3 text-white">Register</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-3 text-white">Products</a></li>
+  </ul>
+
+  <ul class="nav col-md-3 justify-content-end mb-md-0 list-unstyled">
+    <li class="nav-item">
+      <a href="#" class="nav-link px-3 text-white">
+        <i class="bi bi-twitter fs-4"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link px-3 text-white">
+        <i class="bi bi-instagram fs-4"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link px-3 text-white">
+        <i class="bi bi-facebook fs-4"></i>
+      </a>
+    </li>
+  </ul>
 </footer>
+
     </Container>
   );
 }
