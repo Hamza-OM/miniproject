@@ -8,7 +8,7 @@ import 'animate.css/animate.min.css';
 function HomePage() {
   return (
     <Container fluid className="home-page animate__animated animate__fadeIn">
-      {/* Half Page Image Slider Header */}
+      {/* Full Page Image Slider Header */}
       <Carousel fade className="d-block w-100">
         <Carousel.Item>
           <img
@@ -17,6 +17,8 @@ function HomePage() {
             alt="First slide"
           />
           <Carousel.Caption>
+            {/* <h3>Slide 1 Heading</h3>
+              <p>Slide 1 Description</p> */}
             <NavLink to="/products" className="btn btn-primary">
               Shop Now
             </NavLink>
@@ -29,6 +31,8 @@ function HomePage() {
             alt="Second slide"
           />
           <Carousel.Caption>
+            {/* <h3>Slide 2 Heading</h3>
+              <p>Slide 2 Description</p> */}
             <NavLink to="/products" className="btn btn-secondary">
               Explore More
             </NavLink>
@@ -37,17 +41,14 @@ function HomePage() {
         {/* Add more Carousel.Item elements for additional slides */}
       </Carousel>
 
-      {/* Main Content Section */}
-      <Row className="main-content">
-        <Col xs={12} md={6}>
+      {/* Rest of your homepage content */}
+      <Row>
+        <Col>
           {/* Your main content goes here */}
-        </Col>
-        <Col xs={12} md={6}>
-          {/* Additional content goes here */}
         </Col>
       </Row>
 
-      {/* Footer Section */}
+      {/* Improved Footer */}
       <footer className="footer fixed-bottom bg-light py-2 border-top d-flex justify-content-between align-items-center">
         <div className="col-md-4">
           <h5>Hamza Alsiyabi</h5>
