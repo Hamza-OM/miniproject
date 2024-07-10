@@ -48,36 +48,32 @@ function HomePage() {
         </Col>
       </Row>
 
-      {/* Bootstrap Footer #09 */}
-      <footer className="footer bg-dark text-light text-center py-3">
-        <Container>
-          <Row>
-            <Col md={4}>
-              <h5>Hamza Alsiyabi</h5>
-              <p>About Us</p>
-              <p>Contact Us</p>
-            </Col>
-            <Col md={4}>
-              <h5>Quick Links</h5>
-              <p>Home</p>
-              <p>Register</p>
-              <p>Products</p>
-            </Col>
-            <Col md={4}>
-              <h5>Follow Us</h5>
-              <p>
-                <i className="bi bi-twitter"></i> Twitter
-              </p>
-              <p>
-                <i className="bi bi-instagram"></i> Instagram
-              </p>
-              <p>
-                <i className="bi bi-facebook"></i> Facebook
-              </p>
-            </Col>
-          </Row>
-        </Container>
-      </footer>
+      {/* Improved Footer */}
+      <footer className="footer fixed-bottom bg-light py-2 border-top d-flex justify-content-between align-items-center">
+  <div className="col-md-4">
+    <h5>Hamza Alsiyabi</h5>
+    <p>About Us</p>
+    <p>Contact Us</p>
+  </div>
+  <div className="col-md-4">
+    <h5>Quick Links</h5>
+    <p>Home</p>
+    <p>Register</p>
+    <p>Products</p>
+  </div>
+  <div className="col-md-4 text-end">
+    <h5>Follow Us</h5>
+    <p>
+      <i className="bi bi-twitter"></i> Twitter
+    </p>
+    <p>
+      <i className="bi bi-instagram"></i> Instagram
+    </p>
+    <p>
+      <i className="bi bi-facebook"></i> Facebook
+    </p>
+  </div>
+</footer>
     </Container>
   );
 }
