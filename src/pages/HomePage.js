@@ -37,17 +37,17 @@ function HomePage() {
         {/* Add more Carousel.Item elements for additional slides */}
       </Carousel>
 
-      {/* Rest of your homepage content */}
+      {/* Main Content Section */}
       <Row className="main-content">
-        <Col md={6}>
+        <Col xs={12} md={6}>
           {/* Your main content goes here */}
         </Col>
-        <Col md={6}>
+        <Col xs={12} md={6}>
           {/* Additional content goes here */}
         </Col>
       </Row>
 
-      {/* Improved Footer */}
+      {/* Footer Section */}
       <footer className="footer fixed-bottom bg-light py-2 border-top d-flex justify-content-between align-items-center">
         <div className="col-md-4">
           <h5>Hamza Alsiyabi</h5>
