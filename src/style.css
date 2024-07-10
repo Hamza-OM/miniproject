@@ -1,10 +1,6 @@
-
-/*adminPage*/
-
 /* Admin Page Styles */
-
 .admin-container {
-  padding: 1rem; /* Adjust padding for the admin container */
+  padding: 1rem;
   background-color: #f5f5f5;
   margin-top: 3%;
 }
@@ -24,27 +20,20 @@
   width: 150px;
 }
 
-
-
-
-
-
-/*Login*/
-
+/* Login Page Styles */
 .login-container {
-  background-color: #f5f5f5; 
+  background-color: #f5f5f5;
 }
 
-.login-form-container.glass-morphism{
-  max-width: 400px;
-  padding: 30px;
+.login-form-container.glass-morphism {
+  max-width: 100%;
+  padding: 20px;
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.8); 
-  backdrop-filter: blur(8px); 
-  border: 1px solid rgba(0, 0, 0, 0.2); 
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 
 .login-title {
   text-align: center;
@@ -53,38 +42,32 @@
 
 .login-subtitle {
   text-align: center;
-  color: #888; 
+  color: #888;
   margin-bottom: 15px;
 }
 
 .text-muted {
-  font-size: 0.8rem; 
+  font-size: 0.8rem;
 }
 
 .form-check-label {
-  font-weight: normal; 
+  font-weight: normal;
 }
 
-
-
-
-
-/*register*/
-
+/* Register Page Styles */
 .register-container {
-  background-color: #f5f5f5; 
+  background-color: #f5f5f5;
 }
 
-.register-form-container.glass{
-  max-width: 400px;
-  padding: 30px;
+.register-form-container.glass {
+  max-width: 100%;
+  padding: 20px;
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.8); 
-  backdrop-filter: blur(8px); 
-  border: 1px solid rgba(0, 0, 0, 0.2); 
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
-  
 
 .register-title {
   text-align: center;
@@ -93,84 +76,50 @@
 
 .register-subtitle {
   text-align: center;
-  color: #888; 
+  color: #888;
   margin-bottom: 15px;
 }
 
-.text-muted {
-  font-size: 0.8rem; 
-}
-
-.form-check-label {
-  font-weight: normal; 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/*ProductPage*/
-
+/* Product Page Styles */
 .product-list-container {
   padding: 1rem;
-  backdrop-filter: blur(8px); 
-  border: 1px solid rgba(0, 0, 0, 0.2); 
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   margin-top: 3%;
-
-  
 }
-
 
 .search-and-filter {
   width: 100%;
-  max-width: 700px; 
+  max-width: 700px;
 }
 
 .category-dropdown {
-  background-color: #fff; 
+  background-color: #fff;
 }
-
-
-/* .product-list-heading {
-  
-} */
-
-
 
 /* Custom styles for the homepage */
 .home-page {
-  padding-top: 5rem; /* Add padding to the top for better spacing */
-  padding-bottom: 2rem; /* Add padding to the bottom for better spacing */
+  padding-top: 5rem;
+  padding-bottom: 2rem;
 }
 
 .custom-slider-image {
-  max-height: 400px; /* Adjust the max height of the carousel images */
-  object-fit: cover; /* Ensure the image covers the container */
+  max-height: 100%;
+  object-fit: cover;
 }
 
 .main-content {
-  padding: 1rem; /* Add padding to the main content area */
+  padding: 1rem;
 }
 
 .footer {
-  padding: 1rem; /* Adjust padding for the footer */
-  background-color: #f8f9fa; /* Change the background color if needed */
-  border-top: 1px solid #ccc; /* Add a border to separate the footer */
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-top: 1px solid #ccc;
 }
 
-
-
-/*navbar*/
-
-/* Ensure the navbar remains visible on smaller screens */
+/* Navbar Styles */
 .navbar {
   position: fixed;
   top: 0;
@@ -182,25 +131,25 @@
 
 /* Adjust the content padding to avoid overlap with the navbar */
 .content {
-  padding-top: 60px; /* Adjust the top padding to accommodate the fixed navbar */
+  padding-top: 60px;
 }
 
 /* Responsive styles for smaller screens */
 @media (max-width: 576px) {
   .home-page {
-    padding-top: 3rem; /* Adjust padding for smaller screens */
-    padding-bottom: 1rem; /* Adjust padding for smaller screens */
+    padding-top: 3rem;
+    padding-bottom: 1rem;
   }
 
   .custom-slider-image {
-    max-height: 300px; /* Adjust the max height of the carousel images for smaller screens */
+    max-height: 300px;
   }
 
   .main-content {
-    padding: 0.5rem; /* Adjust padding for the main content area on smaller screens */
+    padding: 0.5rem;
   }
 
   .footer {
-    padding: 0.5rem; /* Adjust padding for the footer on smaller screens */
+    padding: 0.5rem;
   }
 }
