@@ -52,7 +52,7 @@ function HomePage() {
       <footer class="footer fixed-bottom bg-light text-dark d-flex flex-wrap justify-content-between align-items-center py-3 px-5">
   <div class="col">
     <a href="#" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-      <h5 class="text-white fs-4">OnlineShop</h5>
+      <h5 class="text-dark fs-4">OnlineShop</h5>
     </a>
     <p class="text-muted">&copy; 2024 Hamza Alsiyabi</p>
   </div>
