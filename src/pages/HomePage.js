@@ -30,7 +30,7 @@ function HomePage() {
           />
           <Carousel.Caption>
             <NavLink to="/products" className="btn btn-secondary">
-              Explore Moreeeeeeeeeeeeeeeee
+              Explore More
             </NavLink>
           </Carousel.Caption>
         </Carousel.Item>
