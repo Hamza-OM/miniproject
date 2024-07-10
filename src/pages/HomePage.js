@@ -8,7 +8,7 @@ import 'animate.css/animate.min.css';
 function HomePage() {
   return (
     <Container fluid className="home-page animate__animated animate__fadeIn">
-      {/* Full Page Image Slider Header */}
+      {/* Half Page Image Slider Header */}
       <Carousel fade className="d-block w-100">
         <Carousel.Item>
           <img
@@ -39,8 +39,11 @@ function HomePage() {
 
       {/* Rest of your homepage content */}
       <Row className="main-content">
-        <Col>
+        <Col md={6}>
           {/* Your main content goes here */}
+        </Col>
+        <Col md={6}>
+          {/* Additional content goes here */}
         </Col>
       </Row>
 
