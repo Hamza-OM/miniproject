@@ -4,6 +4,7 @@ import AdminProductForm from '../components/AdminProductForm';
 import { Button, Modal } from 'react-bootstrap';
 import Swal from 'sweetalert2';
 import 'animate.css/animate.min.css';
+import { useTable } from 'react-table';
 
 const AdminPage = () => {
   const [products, setProducts] = useState([]);
@@ -48,6 +49,32 @@ const AdminPage = () => {
     setShowModal(true);
   };
 
+  const columns = [
+    { Header: 'ID', accessor: 'PId' },
+    { Header: 'Name', accessor: 'Name' },
+    { Header: 'Description', accessor: 'Description' },
+    { Header: 'Image', accessor: 'Image' },
+    { Header: 'Price', accessor: 'Price' },
+    { Header: 'Category ID', accessor: 'CId' },
+    {
+      Header: 'Actions',
+      Cell: ({ row }) => (
+        <>
+          <Button variant="warning" onClick={() => handleEdit(row.original)}>Edit</Button>
+          <Button variant="danger" onClick={() => handleDelete(row.original.PId)}>Delete</Button>
+        </>
+      ),
+    },
+  ];
+
+  const {
+    getTableProps,
+    getTableBodyProps,
+    headerGroups,
+    rows,
+    prepareRow,
+  } = useTable({ columns, data: products });
+
   return (
     <div className="admin-container animate__animated animate__fadeIn">
       <h2 className="text-center">Admin Panel</h2>
@@ -57,33 +84,27 @@ const AdminPage = () => {
       </div>
 
       <div className="table-responsive">
-        <table className="table table-striped">
+        <table {...getTableProps()} className="table table-striped">
           <thead>
-            <tr>
-              <th>ID</th>
-              <th>Name</th>
-              <th>Description</th>
-              <th>Image</th>
-              <th>Price</th>
-              <th>Category ID</th>
-              <th>Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            {products.map((product) => (
-              <tr key={product.PId}>
-                <td>{product.PId}</td>
-                <td>{product.Name}</td>
-                <td>{product.Description.slice(0, 30) + "..."}</td>
-                <td>{product.Image}</td>
-                <td>{product.Price}</td>
-                <td>{product.CId}</td>
-                <td>
-                  <Button variant="warning" onClick={() => handleEdit(product)}>Edit</Button>
-                  <Button variant="danger" onClick={() => handleDelete(product.PId)}>Delete</Button>
-                </td>
+            {headerGroups.map(headerGroup => (
+              <tr {...headerGroup.getHeaderGroupProps()}>
+                {headerGroup.headers.map(column => (
+                  <th {...column.getHeaderProps()}>{column.render('Header')}</th>
+                ))}
               </tr>
             ))}
+          </thead>
+          <tbody {...getTableBodyProps()}>
+            {rows.map(row => {
+              prepareRow(row);
+              return (
+                <tr {...row.getRowProps()}>
+                  {row.cells.map(cell => {
+                    return <td {...cell.getCellProps()}>{cell.render('Cell')}</td>;
+                  })}
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>
