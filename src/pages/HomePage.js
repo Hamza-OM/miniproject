@@ -49,7 +49,7 @@ function HomePage() {
       </Row>
 
       {/* Improved Footer */}
-      <footer class="footer fixed-bottom bg-dark text-white d-flex flex-wrap justify-content-between align-items-center py-3 px-5">
+      <footer class="footer fixed-bottom bg-light text-dark d-flex flex-wrap justify-content-between align-items-center py-3 px-5">
   <div class="col">
     <a href="#" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
       <h5 class="text-white fs-4">Hamza Alsiyabi</h5>
@@ -58,11 +58,9 @@ function HomePage() {
   </div>
 
   <ul class="nav col-md-auto mb-md-0 justify-content-end list-unstyled">
-    <li class="nav-item"><a href="#" class="nav-link px-3 text-white">Home</a></li>
     <li class="nav-item"><a href="#" class="nav-link px-3 text-white">About Us</a></li>
     <li class="nav-item"><a href="#" class="nav-link px-3 text-white">Contact Us</a></li>
-    <li class="nav-item"><a href="#" class="nav-link px-3 text-white">Register</a></li>
-    <li class="nav-item"><a href="#" class="nav-link px-3 text-white">Products</a></li>
+    
   </ul>
 
   <ul class="nav col-md-3 justify-content-end mb-md-0 list-unstyled">
