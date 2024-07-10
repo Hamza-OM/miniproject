@@ -172,11 +172,12 @@
 
 /* Ensure the navbar remains visible on smaller screens */
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 1000; /* Ensure the navbar is above other content */
-  background-color: #fff; /* Set a background color for the navbar */
-  width: 100%; /* Make the navbar full width */
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #fff;
 }
 
 /* Adjust the content padding to avoid overlap with the navbar */
