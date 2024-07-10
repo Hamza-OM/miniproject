@@ -4,8 +4,7 @@ import AdminProductForm from '../components/AdminProductForm';
 import { Button, Modal } from 'react-bootstrap';
 import Swal from 'sweetalert2';
 import 'animate.css/animate.min.css';
-import ReactTable from 'react-table-6';
-import 'react-table-6/react-table.css';
+import { DataGrid } from '@mui/x-data-grid'; // Import DataGrid from Material-UI
 
 const AdminPage = () => {
   const [products, setProducts] = useState([]);
@@ -51,37 +50,20 @@ const AdminPage = () => {
   };
 
   const columns = [
+    { field: 'PId', headerName: 'ID', width: 100 },
+    { field: 'Name', headerName: 'Name', width: 200 },
+    { field: 'Description', headerName: 'Description', width: 300 },
+    { field: 'Image', headerName: 'Image', width: 150 },
+    { field: 'Price', headerName: 'Price', width: 120 },
+    { field: 'CId', headerName: 'Category ID', width: 120 },
     {
-      Header: 'ID',
-      accessor: 'PId',
-    },
-    {
-      Header: 'Name',
-      accessor: 'Name',
-    },
-    {
-      Header: 'Description',
-      accessor: 'Description',
-      Cell: row => <div>{row.value.slice(0, 30) + "..."}</div>,
-    },
-    {
-      Header: 'Image',
-      accessor: 'Image',
-    },
-    {
-      Header: 'Price',
-      accessor: 'Price',
-    },
-    {
-      Header: 'Category ID',
-      accessor: 'CId',
-    },
-    {
-      Header: 'Actions',
-      Cell: row => (
+      field: 'actions',
+      headerName: 'Actions',
+      width: 200,
+      renderCell: (params) => (
         <div>
-          <Button variant="warning" onClick={() => handleEdit(row.original)}>Edit</Button>
-          <Button variant="danger" onClick={() => handleDelete(row.original.PId)}>Delete</Button>
+          <Button variant="warning" onClick={() => handleEdit(params.row)}>Edit</Button>
+          <Button variant="danger" onClick={() => handleDelete(params.row.PId)}>Delete</Button>
         </div>
       ),
     },
@@ -95,12 +77,12 @@ const AdminPage = () => {
         <Button variant="secondary" onClick={handleShowAddModal}>Add Product</Button>
       </div>
 
-      <div className="table-container">
-        <ReactTable
-          data={products}
+      <div style={{ height: 400, width: '100%' }}>
+        <DataGrid
+          rows={products}
           columns={columns}
-          defaultPageSize={10}
-          className="-striped -highlight"
+          pageSize={10}
+          checkboxSelection
         />
       </div>
 
