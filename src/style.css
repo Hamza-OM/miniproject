@@ -165,3 +165,21 @@
   background-color: #f8f9fa; /* Change the background color if needed */
   border-top: 1px solid #ccc; /* Add a border to separate the footer */
 }
+
+
+
+/*navbar*/
+
+/* Ensure the navbar remains visible on smaller screens */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure the navbar is above other content */
+  background-color: #fff; /* Set a background color for the navbar */
+  width: 100%; /* Make the navbar full width */
+}
+
+/* Adjust the content padding to avoid overlap with the navbar */
+.content {
+  padding-top: 60px; /* Adjust the top padding to accommodate the fixed navbar */
+}
