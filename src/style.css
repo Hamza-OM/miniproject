@@ -184,3 +184,23 @@
 .content {
   padding-top: 60px; /* Adjust the top padding to accommodate the fixed navbar */
 }
+
+/* Responsive styles for smaller screens */
+@media (max-width: 576px) {
+  .home-page {
+    padding-top: 3rem; /* Adjust padding for smaller screens */
+    padding-bottom: 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .custom-slider-image {
+    max-height: 300px; /* Adjust the max height of the carousel images for smaller screens */
+  }
+
+  .main-content {
+    padding: 0.5rem; /* Adjust padding for the main content area on smaller screens */
+  }
+
+  .footer {
+    padding: 0.5rem; /* Adjust padding for the footer on smaller screens */
+  }
+}
