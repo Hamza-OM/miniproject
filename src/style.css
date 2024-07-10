@@ -1,73 +1,11 @@
-/* Dark Theme Customization */
 
-body {
-  background-color: #333;
-  color: #fff;
-}
+/*adminPage*/
 
-/* Navbar Styles */
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  background-color: #222; /* Darker background color */
-}
+/* Admin Page Styles */
 
-.navbar-brand {
-  color: #fff;
-}
-
-.nav-link {
-  color: #fff;
-}
-
-/* Footer Styles */
-.footer {
-  padding: 1rem;
-  background-color: #222; /* Darker background color */
-  color: #ccc; /* Lighter text color */
-}
-
-/* Home Page Styles */
-.home-page {
-  padding-top: 5rem;
-  padding-bottom: 2rem;
-}
-
-.hero-section {
-  background-color: #333;
-  padding: 5rem 0;
-}
-
-.hero-image img {
-  width: 100%;
-  height: auto;
-}
-
-.hero-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.featured-products h2 {
-  text-align: center;
-  color: #ccc;
-}
-
-.custom-slider-image {
-  max-height: 400px;
-  object-fit: cover;
-  padding: 7pt;
-}
-
-/* General Dark Theme Customization */
 .admin-container {
-  padding: 1rem;
-  background-color: #444;
+  padding: 1rem; /* Adjust padding for the admin container */
+  background-color: #f5f5f5;
   margin-top: 3rem;
 }
 
@@ -86,19 +24,28 @@ body {
   width: 150px;
 }
 
+
+
+
+
+
+/*Login*/
+
 .login-container {
-  background-color: #444;
+  background-color: #f5f5f5; 
 }
 
-.login-form-container.glass-morphism {
+.login-form-container.glass-morphism{
   max-width: 400px;
   padding: 30px;
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.8); 
+  backdrop-filter: blur(8px); 
+  border: 1px solid rgba(0, 0, 0, 0.2); 
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
 }
+
+
 
 .login-title {
   text-align: center;
@@ -107,33 +54,38 @@ body {
 
 .login-subtitle {
   text-align: center;
-  color: #ccc;
+  color: #888; 
   margin-bottom: 15px;
 }
 
 .text-muted {
-  font-size: 0.8rem;
-  color: #999;
+  font-size: 0.8rem; 
 }
 
 .form-check-label {
-  font-weight: normal;
-  color: #ccc;
+  font-weight: normal; 
 }
+
+
+
+
+
+/*register*/
 
 .register-container {
-  background-color: #444;
+  background-color: #f5f5f5; 
 }
 
-.register-form-container.glass {
+.register-form-container.glass{
   max-width: 400px;
   padding: 30px;
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.8); 
+  backdrop-filter: blur(8px); 
+  border: 1px solid rgba(0, 0, 0, 0.2); 
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
 }
+  
 
 .register-title {
   text-align: center;
@@ -142,23 +94,91 @@ body {
 
 .register-subtitle {
   text-align: center;
-  color: #ccc;
+  color: #888; 
   margin-bottom: 15px;
 }
 
+.text-muted {
+  font-size: 0.8rem; 
+}
+
+.form-check-label {
+  font-weight: normal; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*ProductPage*/
+
 .product-list-container {
   padding: 1rem;
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px); 
+  border: 1px solid rgba(0, 0, 0, 0.2); 
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
   margin-top: 3%;
+
+  
 }
+
 
 .search-and-filter {
   width: 100%;
-  max-width: 700px;
+  max-width: 700px; 
 }
 
 .category-dropdown {
-  background-color: #555;
+  background-color: #fff; 
 }
+
+
+/* .product-list-heading {
+  
+} */
+
+
+
+.home-page {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.hero-section {
+  background-color: #f5f5f5;
+  padding: 5rem 0;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto; /* Adjust image height as needed */
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.featured-products h2 {
+  text-align:center;
+}
+
+   /* Custom styles for carousel images */
+   /* .custom-slider-image {
+    max-height: 400px; 
+    object-fit: cover; 
+    padding: 7pt;
+  } */
+
+
+
+  
