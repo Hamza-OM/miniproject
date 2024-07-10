@@ -15,6 +15,7 @@ function HomePage() {
             className="d-block w-100 custom-slider-image" // Add custom class
             src={image1} // Use the imported image
             alt="First slide"
+            style={{ height: '500px' }} // Set a larger height for the image
           />
           <Carousel.Caption>
             <NavLink to="/products" className="btn btn-primary">
@@ -27,6 +28,7 @@ function HomePage() {
             className="d-block w-100 custom-slider-image" // Add custom class
             src={image2} // Use the imported image
             alt="Second slide"
+            style={{ height: '500px' }} // Set a larger height for the image
           />
           <Carousel.Caption>
             <NavLink to="/products" className="btn btn-secondary">
