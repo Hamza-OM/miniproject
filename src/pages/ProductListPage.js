@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { InputGroup, FormControl, Dropdown, DropdownButton, Card, Button } from 'react-bootstrap';
 import 'animate.css/animate.min.css';
 
-
 const ProductListPage = () => {
   const [products, setProducts] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
@@ -32,9 +31,9 @@ const ProductListPage = () => {
   };
 
   return (
-    <div className="product-list-container animate__animated animate__fadeIn">
-      <div className="search-and-filter d-flex justify-content-between align-items-center mb-3">
-        <InputGroup className="flex-grow-1">
+    <div className="product-list-container animate__animated animate__fadeIn" style={{ padding: '1rem' }}>
+      <div className="search-and-filter d-flex flex-column flex-md-row justify-content-between align-items-center mb-3">
+        <InputGroup className="mb-2 mb-md-0">
           <FormControl
             type="text"
             placeholder="Search products..."
@@ -56,7 +55,7 @@ const ProductListPage = () => {
         </DropdownButton>
       </div>
 
-      <h1 className="product-list-heading mb-3">Products</h1>
+      <h1 className="product-list-heading mb-3 text-center">Products</h1>
 
       <div className="row row-cols-1 row-cols-md-3 g-4 product-grid">
         {products.map((product) => (
@@ -75,7 +74,7 @@ const ProductListPage = () => {
                 <Card.Text>{product.Description}</Card.Text>
                 <Card.Text>Price: ${product.Price}</Card.Text>
                 <Card.Text>Category ID: {product.CId}</Card.Text>
-                <Button variant="light">add to cart</Button>
+                <Button variant="light">Add to Cart</Button>
               </Card.Body>
             </Card>
           </div>
@@ -86,5 +85,3 @@ const ProductListPage = () => {
 };
 
 export default ProductListPage;
-
-
