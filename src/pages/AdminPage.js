@@ -47,7 +47,7 @@ const AdminPage = () => {
     setSelectedProduct(null);
     setShowModal(true);
   };
-
+//fdsfdsf
   return (
     <div className="admin-container animate__animated animate__fadeIn">
       <h2 className="text-center">Admin Panel</h2>
