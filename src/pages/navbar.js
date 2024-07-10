@@ -4,7 +4,7 @@ import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 
 function CustomNavbar() {
   return (
-    <Navbar bg="light" expand="lg" style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 1000 }}>
+    <Navbar bg="light" expand="lg" style={{ display: 'fixed', top: 0, left: 0, right: 0, zIndex: 1000 }}>
       <Container>
         <Navbar.Brand as={Link} to="/">OnlineShop</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
