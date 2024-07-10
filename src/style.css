@@ -5,6 +5,66 @@ body {
   color: #fff;
 }
 
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #222; /* Darker background color */
+}
+
+.navbar-brand {
+  color: #fff;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+/* Footer Styles */
+.footer {
+  padding: 1rem;
+  background-color: #222; /* Darker background color */
+  color: #ccc; /* Lighter text color */
+}
+
+/* Home Page Styles */
+.home-page {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.hero-section {
+  background-color: #333;
+  padding: 5rem 0;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.featured-products h2 {
+  text-align: center;
+  color: #ccc;
+}
+
+.custom-slider-image {
+  max-height: 400px;
+  object-fit: cover;
+  padding: 7pt;
+}
+
+/* General Dark Theme Customization */
 .admin-container {
   padding: 1rem;
   background-color: #444;
@@ -101,37 +161,4 @@ body {
 
 .category-dropdown {
   background-color: #555;
-}
-
-.home-page {
-  padding-top: 5rem;
-  padding-bottom: 2rem;
-}
-
-.hero-section {
-  background-color: #333;
-  padding: 5rem 0;
-}
-
-.hero-image img {
-  width: 100%;
-  height: auto;
-}
-
-.hero-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.featured-products h2 {
-  text-align: center;
-  color: #ccc;
-}
-
-.custom-slider-image {
-  max-height: 400px;
-  object-fit: cover;
-  padding: 7pt;
 }
