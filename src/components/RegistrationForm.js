@@ -17,7 +17,7 @@ function RegistrationForm() {
     try {
       const response = await axios.post('https://hamzaalsiyabi-app-33d30b4be32b.herokuapp.com/api/Users', userData);
       Swal.fire('Success!', response.data.message, 'success');
-      navigate('/'); // i can also use window.location
+      navigate('/login'); // i can also use window.location
     } catch (error) { 
       if (error.response) {
         Swal.fire('Error!', error.response.data.message, 'error');
