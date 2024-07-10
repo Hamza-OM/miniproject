@@ -17,8 +17,6 @@ function HomePage() {
             alt="First slide"
           />
           <Carousel.Caption>
-            {/* <h3>Slide 1 Heading</h3>
-              <p>Slide 1 Description</p> */}
             <NavLink to="/products" className="btn btn-primary">
               Shop Now
             </NavLink>
@@ -31,8 +29,6 @@ function HomePage() {
             alt="Second slide"
           />
           <Carousel.Caption>
-            {/* <h3>Slide 2 Heading</h3>
-              <p>Slide 2 Description</p> */}
             <NavLink to="/products" className="btn btn-secondary">
               Explore More
             </NavLink>
@@ -42,7 +38,7 @@ function HomePage() {
       </Carousel>
 
       {/* Rest of your homepage content */}
-      <Row>
+      <Row className="main-content">
         <Col>
           {/* Your main content goes here */}
         </Col>
