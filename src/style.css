@@ -180,5 +180,21 @@
   }
 
 
+  /* Add responsive styles for the table */
+@media screen and (max-width: 600px) {
+  .table-responsive {
+    overflow-x: auto;
+  }
+
+  .table {
+    width: 100%;
+  }
+
+  .table th,
+  .table td {
+    white-space: nowrap;
+  }
+}
+
 
   
